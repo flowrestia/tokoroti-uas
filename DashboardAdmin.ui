@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>907</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #e8ecf1;   
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="verticalFrame">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>791</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: #d86072;
+    color: #fff6ee;
+    border: 1px solid #c2a600;
+    font: bold 12pt &quot;Segoe UI&quot;;
+    padding: 5px;
+}
+
+QFrame:pressed {
+    background-color: #ffcf33;
+}
+</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Sistem Manajemen Karyawan Toko Roti</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="verticalFrame">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>70</y>
+      <width>160</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    background-color: #d86072;
+    color: #262628;
+    border: 1px solid #c2a600;
+    font: bold 12pt &quot;Segoe UI&quot;;
+    padding: 5px;
+}
+
+QFrame:pressed {
+    background-color: #ffcf33;
+}
+</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item alignment="Qt::AlignVCenter">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">color: #262628;
+font-weight: bold;
+background-color: #d6dc82;
+padding: 5px;
+qproperty-alignment: 'AlignCenter';
+</string>
+       </property>
+       <property name="text">
+        <string>Menu Admin</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #fff6ee;
+	color: #262628;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #d6dc82;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Dashboard</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #fff6ee;
+	color: #262628;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #d6dc82;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Data Karyawan</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #fff6ee;
+	color: #262628;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #d6dc82;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Jabatan</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #fff6ee;
+	color: #262628;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #d6dc82;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Absensi</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #fff6ee;
+	color: #262628;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #d6dc82;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Laporan Gaji</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_6">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #fff6ee;
+	color: #262628;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #d6dc82;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Validasi Gaji</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #fff6ee;
+	color: #262628;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #d6dc82;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Arsip Nonaktif</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="styleSheet">
+        <string notr="true">color: red;
+background-color: white;
+border: none;
+font-weight: bold;
+padding: 5px;QPushButton {
+    background-color: #fff6ee;
+	color: red;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+QPushButton:hover {
+    background-color: #d6dc82;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Logout</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="verticalFrame">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>80</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #fff6ee;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 3px;
+</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+    font-size: 9pt;
+	qproperty-alignment: 'AlignCenter';
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Karyawan Aktif</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">padding-left: 10px;
+text-align: center;
+qproperty-alignment: 'AlignCenter';</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="verticalFrame">
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>170</y>
+      <width>621</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+     </font>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="font">
+        <font>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>189</y>
+      <width>621</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_8">
+     <item alignment="Qt::AlignLeft|Qt::AlignVCenter">
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">font-size: 14pt;
+font-weight: bold;
+padding-left: 10px;
+</string>
+       </property>
+       <property name="text">
+        <string>Dashboard Admin</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="styleSheet">
+        <string notr="true">QHeaderView::section {
+    background-color: #d6dc82;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+}
+
+QTableWidget {
+    background-color: #fff6ee;
+    gridline-color: #ccc;
+    border: 1px solid #ddd;
+}
+
+QTableWidget::item:selected {
+    background-color: #ffe5b4;
+    color: black;
+}
+</string>
+       </property>
+       <column>
+        <property name="text">
+         <string>No</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nama</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Jabatan</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Status</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Tanggal Mulai</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Aksi</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="verticalFrame_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>80</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #fff6ee;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 3px;
+</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+    font-size: 9pt;
+	qproperty-alignment: 'AlignCenter';
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Karyawan Nonaktif</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">padding-left: 10px;
+text-align: center;
+qproperty-alignment: 'AlignCenter';</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="verticalFrame_3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>80</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #fff6ee;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 3px;
+</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+    font-size: 9pt;
+	qproperty-alignment: 'AlignCenter';
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Total Gaji Bulan Ini</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="styleSheet">
+        <string notr="true">padding-left: 10px;
+text-align: center;
+qproperty-alignment: 'AlignCenter';</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QFrame" name="verticalFrame_4">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>80</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #fff6ee;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 3px;
+</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+    font-size: 9pt;
+	qproperty-alignment: 'AlignCenter';
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Validasi Gaji</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="styleSheet">
+        <string notr="true">padding-left: 10px;
+text-align: center;
+qproperty-alignment: 'AlignCenter';</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>907</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
